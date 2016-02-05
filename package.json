@@ -1,6 +1,6 @@
 {
   "name": "bigformulas",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Set of function collection",
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
