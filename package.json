@@ -8,7 +8,13 @@
     "test": "NODE_ENV=development node test/"
   },
   "keywords": [
-    "formulas"
+    "formulas",
+    "big data",
+    "collection",
+    "matrix",
+    "array",
+    "lookup",
+    "statistic"
   ],
   "author": "Ade Fruandta",
   "license": "ISC",
