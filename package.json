@@ -1,14 +1,19 @@
 {
   "name": "bigformulas",
   "version": "0.1.1",
-  "description": "Set of function big data",
+  "description": "Set of function collection",
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
   "scripts": {
     "test": "NODE_ENV=development node test/"
   },
   "keywords": [
-    "formulas"
+    "formulas",
+    "collection",
+    "matrix",
+    "array",
+    "lookup",
+    "statistic"
   ],
   "author": "Ade Fruandta",
   "license": "ISC",
