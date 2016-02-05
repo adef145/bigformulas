@@ -1,7 +1,7 @@
 {
   "name": "bigformulas",
   "version": "0.1.1",
-  "description": "Set of function big data",
+  "description": "Set of function collection",
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "keywords": [
     "formulas",
-    "big data",
     "collection",
     "matrix",
     "array",
