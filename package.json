@@ -5,7 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
   "scripts": {
-    "test": "NODE_ENV=development node test/"
+    "test": "NODE_ENV=development node test/",
+    "test-debug": "NODE_ENV=development node debug test/"
   },
   "keywords": [
     "formulas",

@@ -7,7 +7,9 @@ var collection = {
   max: require('./lib/statistic/max.js'),
   min: require('./lib/statistic/min.js'),
   transpose: require('./lib/matrix/transpose.js'),
-  lookup: require('./lib/collection/lookup.js')
+  lookup: require('./lib/collection/lookup.js'),
+  dateAdd: require('./lib/datetime/dateAdd.js'),
+  dateDiff: require('./lib/datetime/dateDiff.js')
 };
 
 module.exports = collection;
