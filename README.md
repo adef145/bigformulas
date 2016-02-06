@@ -149,7 +149,7 @@ console.log(Formulas.lookup(data1, data2, {
 ###### dateAdd(dateTime, type, value)
 * dateTime: datetime value to calculated
 * type: string ('milisecond', 'second', 'minute', 'hour', 'day', 'month', 'year')
-* value: integer
+* value: number
 * return: date
 ```bash
 var dateTime = new Date();
