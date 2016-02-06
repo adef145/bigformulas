@@ -92,12 +92,13 @@ console.log(Formulas.dateAdd(date, 'year', 1));
 
 console.log('');
 
+// dateDiff
 var date1 = new Date();
 var date2 = new Date();
 console.log(date1);
-Formulas.dateAdd(date2, 'milisecond', 10);
-Formulas.dateAdd(date2, 'second', 1);
-Formulas.dateAdd(date2, 'hour', 1);
-Formulas.dateAdd(date2, 'day', 5);
+date2 = Formulas.dateAdd(date2, 'milisecond', 10);
+date2 = Formulas.dateAdd(date2, 'second', 1);
+date2 = Formulas.dateAdd(date2, 'hour', 1);
+date2 = Formulas.dateAdd(date2, 'day', 5);
 console.log(date2);
 console.log(Formulas.dateDiff(date2, date1));

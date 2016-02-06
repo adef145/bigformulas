@@ -33,6 +33,7 @@ console.log(Formulas.mean(data) + ' => ' + 2.5);
 * data: collection of data to calculated
 * options: 
   * key: if data an object give a string of key
+* return: number / object
 ```bash
 data = [1, 2, 3];
 console.log(Formulas.max(data));
@@ -45,6 +46,7 @@ console.log(Formulas.max(data, {key: 'num'}));
 * data: collection of data to calculated
 * options: 
   * key: if data an object give a string of key
+* return: number / object
 ```bash
 data = [1, 2, 3];
 console.log(Formulas.min(data));
@@ -58,6 +60,7 @@ console.log(Formulas.min(data, {key: 'num'}));
 * options:
   * key: if data an object give a string of key
   * isCounted: give a function to check data to calculated (default always true)
+* return: number / object
 ```bash
 data = [1, 2, 3];
 console.log(Formulas.min(data));
@@ -75,6 +78,7 @@ console.log(Formulas.mean(data, {key: 'num', isCounted: function(item) {
 * data: collection of data to calculated
 * options:
   * key: if data an object give a string of key
+* return: number / object
 ```bash
 data = [3, 1, 2, 4];
 console.log(Formulas.median(data) + ' => ' + 2.5);
@@ -88,6 +92,7 @@ console.log(Formulas.median(data, {key: 'num'}) + ' => ' + 2.5);
 * options:
   * key: if data an object give a string of key
   * isCounted: give a function to check data to calculated (default always true)
+* return: number / object
 ```bash
 data = [1, 2, 2, 4];
 console.log(Formulas.modus(data));
@@ -103,6 +108,7 @@ console.log(Formulas.modus(data, {key: 'num', isCounted: function(item) {
 
 ###### traspose(data)
 * data: collection of data to transpose
+* return: array
 ```bash
 data = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
 console.log(Formulas.transpose(data));
@@ -119,6 +125,7 @@ console.log(Formulas.transpose(data));
  * key2: key of data2 to be lookup
  * alias: alias of child to be stored in data1 if lookup (default 'child')
  * isEqual: function to be validated that data is founded (default isEqual from lodash)
+* return: object
 ```bash
 var data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
 var data2 = [{id: 1, parentId: 1, favorite: true}, {id: 2, parentId: 3, favorite: false}];
@@ -143,6 +150,7 @@ console.log(Formulas.lookup(data1, data2, {
 * dateTime: datetime value to calculated
 * type: string ('milisecond', 'second', 'minute', 'hour', 'day', 'month', 'year')
 * value: integer
+* return: date
 ```bash
 var dateTime = new Date();
 console.log(dateTime);
@@ -157,6 +165,7 @@ console.log(Formulas.dateAdd(dateTime, 'year', 1));
 ###### dateDiff(dateTime1, dateTime2)
 * dateTime1: date value to calculated
 * dateTime2: date value to calculated
+* return: object {milisecond, second, minute, hour, day}
 ```bash
 var dateTime1 = new Date();
 var dateTime2 = new Date();
