@@ -110,5 +110,5 @@ console.log(Formulas.dateDiff(date2, date1));
 // maxDiff
 data = [6, 1, 2, 5];
 console.log(Formulas.maxDiff(data));
-data = [{num: 6}, {num: 1}, {num: 2}, {num: 5}];
+data = [{num: 6}, {num: 2}, {num: 5}, {num: 1}, {num: 3}];
 console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));
