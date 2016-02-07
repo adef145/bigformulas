@@ -31,7 +31,7 @@ console.log(Formulas.mean(data) + ' => ' + 2.5);
 
 ###### max(data, options)
 * data: collection of data to calculated
-* options: 
+* options:
   * key: if data an object give a string of key
 * return: number / object
 ```bash
@@ -42,9 +42,22 @@ data = [{num: 3}, {num: 1}, {num: 2}, {num: 1}];
 console.log(Formulas.max(data, {key: 'num'}));
 ```
 
+###### maxDiff(data, options)
+* data: data to calculated
+* options:
+  * key: if data an object give a string of key
+  * type: string ('sequence' or 'random') default 'random'
+* return: object {max, min}
+```bash
+data = [6, 1, 2, 5];
+console.log(Formulas.maxDiff(data));
+data = [{num: 6}, {num: 1}, {num: 2}, {num: 5}];
+console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));
+```
+
 ###### min(data, options)
 * data: collection of data to calculated
-* options: 
+* options:
   * key: if data an object give a string of key
 * return: number / object
 ```bash

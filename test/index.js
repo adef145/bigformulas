@@ -106,3 +106,9 @@ date2 = Formulas.dateAdd(date2, 'year', 2);
 console.log(date2);
 console.log(Formulas.dateDiff(date1, date2));
 console.log(Formulas.dateDiff(date2, date1));
+
+// maxDiff
+data = [6, 1, 2, 5];
+console.log(Formulas.maxDiff(data));
+data = [{num: 6}, {num: 1}, {num: 2}, {num: 5}];
+console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));

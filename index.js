@@ -5,6 +5,7 @@ var collection = {
   median: require('./lib/statistic/median'),
   modus: require('./lib/statistic/modus'),
   max: require('./lib/statistic/max'),
+  maxDiff: require('./lib/statistic/maxDiff'),
   min: require('./lib/statistic/min'),
   transpose: require('./lib/matrix/transpose'),
   lookup: require('./lib/collection/lookup'),
