@@ -165,15 +165,19 @@ console.log(Formulas.dateAdd(dateTime, 'year', 1));
 ###### dateDiff(dateTime1, dateTime2)
 * dateTime1: date value to calculated
 * dateTime2: date value to calculated
-* return: object {milisecond, second, minute, hour, day}
+* return: object {milisecond, second, minute, hour, day, month, year}
 ```bash
-var dateTime1 = new Date();
-var dateTime2 = new Date();
+var date1 = new Date();
+var date2 = new Date();
 console.log(date1);
-Formulas.dateAdd(dateTime2, 'milisecond', 10);
-Formulas.dateAdd(dateTime2, 'second', 1);
-Formulas.dateAdd(dateTime2, 'hour', 1);
-Formulas.dateAdd(dateTime2, 'day', 5);
-console.log(dateTime2);
-console.log(Formulas.dateDiff(dateTime2, dateTime1));
+date2 = Formulas.dateAdd(date2, 'milisecond', 100);
+date2 = Formulas.dateAdd(date2, 'second', 100);
+date2 = Formulas.dateAdd(date2, 'minute', 23);
+date2 = Formulas.dateAdd(date2, 'hour', 22);
+date2 = Formulas.dateAdd(date2, 'day', 2);
+date2 = Formulas.dateAdd(date2, 'month', 13);
+date2 = Formulas.dateAdd(date2, 'year', 2);
+console.log(date2);
+console.log(Formulas.dateDiff(date1, date2));
+console.log(Formulas.dateDiff(date2, date1));
 ```

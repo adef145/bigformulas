@@ -1,5 +1,5 @@
 var stringfy = require('json-stable-stringify');
-var Formulas = require('../index.js');
+var Formulas = require('../index');
 
 var data;
 
@@ -96,9 +96,13 @@ console.log('');
 var date1 = new Date();
 var date2 = new Date();
 console.log(date1);
-date2 = Formulas.dateAdd(date2, 'milisecond', 10);
-date2 = Formulas.dateAdd(date2, 'second', 1);
-date2 = Formulas.dateAdd(date2, 'hour', 1);
-date2 = Formulas.dateAdd(date2, 'day', 5);
+date2 = Formulas.dateAdd(date2, 'milisecond', 100);
+date2 = Formulas.dateAdd(date2, 'second', 100);
+date2 = Formulas.dateAdd(date2, 'minute', 23);
+date2 = Formulas.dateAdd(date2, 'hour', 22);
+date2 = Formulas.dateAdd(date2, 'day', 2);
+date2 = Formulas.dateAdd(date2, 'month', 13);
+date2 = Formulas.dateAdd(date2, 'year', 2);
 console.log(date2);
+console.log(Formulas.dateDiff(date1, date2));
 console.log(Formulas.dateDiff(date2, date1));
