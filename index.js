@@ -11,7 +11,7 @@ var collection = {
   lookup: require('./lib/collection/lookup'),
   dateAdd: require('./lib/datetime/dateAdd'),
   dateDiff: require('./lib/datetime/dateDiff'),
-  convTemperatur: require('./lib/converter/convTemperatur')
+  convTemperature: require('./lib/converter/convTemperature')
 };
 
 module.exports = collection;

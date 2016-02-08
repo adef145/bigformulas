@@ -201,5 +201,5 @@ console.log(Formulas.dateDiff(date2, date1));
 * to: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
 ```bash
 data = 75;
-console.log(Formulas.convTemperatur(data, 'R', 'K'));
+console.log(Formulas.convTemperature(data, 'R', 'K'));
 ```
