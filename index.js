@@ -1,13 +1,25 @@
 'use strict';
 
 var collection = {
-  mean: require('./lib/statistic/mean.js'),
-  median: require('./lib/statistic/median.js'),
-  modus: require('./lib/statistic/modus.js'),
-  max: require('./lib/statistic/max.js'),
-  min: require('./lib/statistic/min.js'),
-  transpose: require('./lib/matrix/transpose.js'),
-  lookup: require('./lib/collection/lookup.js')
+  // statistic
+  mean: require('./lib/statistic/mean'),
+  median: require('./lib/statistic/median'),
+  modus: require('./lib/statistic/modus'),
+  max: require('./lib/statistic/max'),
+  maxDiff: require('./lib/statistic/maxDiff'),
+  min: require('./lib/statistic/min'),
+  // matrix
+  transpose: require('./lib/matrix/transpose'),
+  // collection
+  lookup: require('./lib/collection/lookup'),
+  // datetime
+  dateAdd: require('./lib/datetime/dateAdd'),
+  dateDiff: require('./lib/datetime/dateDiff'),
+  // converter
+  convTemperature: require('./lib/converter/convTemperature'),
+  convTime: require('./lib/converter/convTime'),
+  convDistance: require('./lib/converter/convDistance'),
+  convWeight: require('./lib/converter/convWeight')
 };
 
 module.exports = collection;

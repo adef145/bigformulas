@@ -1,5 +1,5 @@
 var stringfy = require('json-stable-stringify');
-var Formulas = require('../index.js');
+var Formulas = require('../index');
 
 var data;
 
@@ -79,3 +79,58 @@ console.log(Formulas.lookup(data1, data2, {
     return item1 === item2;
   }
 }));
+
+// dateAdd
+var date = new Date();
+console.log(date);
+console.log(Formulas.dateAdd(date, 'second', 1));
+console.log(Formulas.dateAdd(date, 'minute', 1));
+console.log(Formulas.dateAdd(date, 'hour', 1));
+console.log(Formulas.dateAdd(date, 'day', 1));
+console.log(Formulas.dateAdd(date, 'month', 1));
+console.log(Formulas.dateAdd(date, 'year', 1));
+
+console.log('');
+
+// dateDiff
+var date1 = new Date();
+var date2 = new Date();
+console.log(date1);
+date2 = Formulas.dateAdd(date2, 'milisecond', 100);
+date2 = Formulas.dateAdd(date2, 'second', 100);
+date2 = Formulas.dateAdd(date2, 'minute', 23);
+date2 = Formulas.dateAdd(date2, 'hour', 22);
+date2 = Formulas.dateAdd(date2, 'day', 2);
+date2 = Formulas.dateAdd(date2, 'month', 13);
+date2 = Formulas.dateAdd(date2, 'year', 2);
+console.log(date2);
+console.log(Formulas.dateDiff(date1, date2));
+console.log(Formulas.dateDiff(date2, date1));
+
+// maxDiff
+data = [6, 1, 2, 5];
+console.log(Formulas.maxDiff(data));
+data = [{num: 6}, {num: 2}, {num: 5}, {num: 1}, {num: 3}];
+console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));
+
+// convTemperatur
+data = 75;
+console.log(Formulas.convTemperature(data, 'R', 'K'));
+
+// convTime
+data = 100;
+console.log(Formulas.convTime(data, 's', 'm'));
+data = 1;
+console.log(Formulas.convTime(data, 'd', 'h'));
+
+// convDistance
+data = 100;
+console.log(Formulas.convDistance(data, 'mm', 'm'));
+data = 1;
+console.log(Formulas.convDistance(data, 'km', 'cm'));
+
+// convWeight
+data = 100;
+console.log(Formulas.convWeight(data, 'mg', 'g'));
+data = 1;
+console.log(Formulas.convWeight(data, 'kg', 'cg'));

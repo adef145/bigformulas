@@ -1,19 +1,35 @@
 {
   "name": "bigformulas",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Set of function collection",
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
   "scripts": {
-    "test": "NODE_ENV=development node test/"
+    "test": "NODE_ENV=development node test/",
+    "test-debug": "NODE_ENV=development node debug test/"
   },
   "keywords": [
     "formulas",
     "collection",
+    "lookup",
+    "converter",
+    "temperatur",
+    "weight",
+    "time",
+    "distance",
+    "datetime",
+    "date add",
+    "date different",
     "matrix",
     "array",
-    "lookup",
-    "statistic"
+    "transpose",
+    "statistic",
+    "max",
+    "min",
+    "modus",
+    "median",
+    "mean",
+    "average"
   ],
   "author": "Ade Fruandta",
   "license": "ISC",
