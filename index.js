@@ -16,7 +16,10 @@ var collection = {
   dateAdd: require('./lib/datetime/dateAdd'),
   dateDiff: require('./lib/datetime/dateDiff'),
   // converter
-  convTemperature: require('./lib/converter/convTemperature')
+  convTemperature: require('./lib/converter/convTemperature'),
+  convTime: require('./lib/converter/convTime'),
+  convDistance: require('./lib/converter/convDistance'),
+  convWeight: require('./lib/converter/convWeight')
 };
 
 module.exports = collection;

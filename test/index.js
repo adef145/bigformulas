@@ -116,3 +116,21 @@ console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));
 // convTemperatur
 data = 75;
 console.log(Formulas.convTemperature(data, 'R', 'K'));
+
+// convTime
+data = 100;
+console.log(Formulas.convTime(data, 's', 'm'));
+data = 1;
+console.log(Formulas.convTime(data, 'd', 'h'));
+
+// convDistance
+data = 100;
+console.log(Formulas.convDistance(data, 'mm', 'm'));
+data = 1;
+console.log(Formulas.convDistance(data, 'km', 'cm'));
+
+// convWeight
+data = 100;
+console.log(Formulas.convWeight(data, 'mg', 'g'));
+data = 1;
+console.log(Formulas.convWeight(data, 'kg', 'cg'));

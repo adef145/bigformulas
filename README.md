@@ -204,3 +204,39 @@ console.log(Formulas.dateDiff(date2, date1));
 data = 75;
 console.log(Formulas.convTemperature(data, 'R', 'K'));
 ```
+
+###### convTime(value, from, to)
+* value: value to calculated
+* from: string (milisecond is 'ms', second is 's', minute is 'm', hour is 'h', day is 'd')
+* to: string (milisecond is 'ms', second is 's', minute is 'm', hour is 'h', day is 'd')
+* return: number
+```bash
+data = 100;
+console.log(Formulas.convTime(data, 's', 'm'));
+data = 1;
+console.log(Formulas.convTime(data, 'd', 'h'));
+```
+
+###### convDistance(value, from, to)
+* value: value to calculated
+* from: string (milimeter is 'mm', centimeter is 'cm', desimeter is 'dm', meter is 'm', dekameter is 'dam', hektometer is 'hm', kilometer is 'km')
+* to: string (milimeter is 'mm', centimeter is 'cm', desimeter is 'dm', meter is 'm', dekameter is 'dam', hektometer is 'hm', kilometer is 'km')
+* return: number
+```bash
+data = 100;
+console.log(Formulas.convDistance(data, 'mm', 'm'));
+data = 1;
+console.log(Formulas.convDistance(data, 'km', 'cm'));
+```
+
+###### convWeight(value, from, to)
+* value: value to calculated
+* from: string (miligram is 'mg', centigram is 'cg', desigram is 'dg', gram is 'g', dekagram is 'dag', hektogram is 'hg', kilogram is 'kg')
+* to: string (miligram is 'mg', centigram is 'cg', desigram is 'dg', gram is 'g', dekagram is 'dag', hektogram is 'hg', kilogram is 'kg')
+* return: number
+```bash
+data = 100;
+console.log(Formulas.convWeight(data, 'mg', 'g'));
+data = 1;
+console.log(Formulas.convWeight(data, 'kg', 'cg'));
+```
