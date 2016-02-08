@@ -199,6 +199,7 @@ console.log(Formulas.dateDiff(date2, date1));
 * value: value to calculated
 * from: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
 * to: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
+* return: number
 ```bash
 data = 75;
 console.log(Formulas.convTemperature(data, 'R', 'K'));
