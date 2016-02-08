@@ -112,3 +112,7 @@ data = [6, 1, 2, 5];
 console.log(Formulas.maxDiff(data));
 data = [{num: 6}, {num: 2}, {num: 5}, {num: 1}, {num: 3}];
 console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));
+
+// convTemperatur
+data = 75;
+console.log(Formulas.convTemperatur(data, 'R', 'K'));

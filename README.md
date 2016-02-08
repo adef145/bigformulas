@@ -7,7 +7,7 @@ This code used [lodash](https://github.com/lodash/lodash "lodash").
 
 This code build in nodejs.
 
-Targeting dependencies to
+Install Big Formulas
 ```bash
 npm install bigformulas
 ```
@@ -193,4 +193,13 @@ date2 = Formulas.dateAdd(date2, 'year', 2);
 console.log(date2);
 console.log(Formulas.dateDiff(date1, date2));
 console.log(Formulas.dateDiff(date2, date1));
+```
+
+###### convTemperatur(value, from, to)
+* value: value to calculated
+* from: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
+* to: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
+```bash
+data = 75;
+console.log(Formulas.convTemperatur(data, 'R', 'K'));
 ```
