@@ -134,10 +134,10 @@ console.log(Formulas.transpose(data));
 * data1: collection of data source
 * data2: collection of data to lookup
 * options:
- * key1: key of data1 to be lookup
- * key2: key of data2 to be lookup
- * alias: alias of child to be stored in data1 if lookup (default 'child')
- * isEqual: function to be validated that data is founded (default isEqual from lodash)
+  * key1: key of data1 to be lookup
+  * key2: key of data2 to be lookup
+  * alias: alias of child to be stored in data1 if lookup (default 'child')
+  * isEqual: function to be validated that data is founded (default isEqual from lodash)
 * return: object
 ```bash
 var data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
