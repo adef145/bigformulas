@@ -32,7 +32,6 @@
     "average"
   ],
   "author": "Ade Fruandta",
-  "license": "ISC",
   "devDependencies": {
     "json-stable-stringify": "^1.0.0"
   },
