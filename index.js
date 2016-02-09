@@ -19,7 +19,10 @@ var collection = {
   convTemperature: require('./lib/converter/convTemperature'),
   convTime: require('./lib/converter/convTime'),
   convDistance: require('./lib/converter/convDistance'),
-  convWeight: require('./lib/converter/convWeight')
+  convWeight: require('./lib/converter/convWeight'),
+  // logical
+  isEven: require('./lib/logical/isEven'),
+  isOdd: require('./lib/logical/isOdd')
 };
 
 module.exports = collection;

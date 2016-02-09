@@ -240,3 +240,19 @@ console.log(Formulas.convWeight(data, 'mg', 'g'));
 data = 1;
 console.log(Formulas.convWeight(data, 'kg', 'cg'));
 ```
+
+###### isEven(value)
+* value: value to calculated
+* return: true / false
+```bash
+data = 1;
+console.log(Formulas.isEven(data));
+```
+
+###### isOdd(value)
+* value: value to calculated
+* return: true / false
+```bash
+data = 1;
+console.log(Formulas.isOdd(data));
+```
