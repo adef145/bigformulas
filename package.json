@@ -29,7 +29,11 @@
     "modus",
     "median",
     "mean",
-    "average"
+    "average",
+    "logical",
+    "isOdd",
+    "isEven",
+    "isEmail"
   ],
   "author": "Ade Fruandta",
   "devDependencies": {

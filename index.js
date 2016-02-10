@@ -22,7 +22,8 @@ var collection = {
   convWeight: require('./lib/converter/convWeight'),
   // logical
   isEven: require('./lib/logical/isEven'),
-  isOdd: require('./lib/logical/isOdd')
+  isOdd: require('./lib/logical/isOdd'),
+  isEmail: require('./lib/logical/isEmail')
 };
 
 module.exports = collection;

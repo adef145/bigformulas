@@ -256,3 +256,11 @@ console.log(Formulas.isEven(data));
 data = 1;
 console.log(Formulas.isOdd(data));
 ```
+
+###### isEmail(email)
+* email: string email to validated
+* return: true / false
+```bash
+data = 'ade.fruandta@gmail.com';
+console.log(Formulas.isEmail(data));
+```
