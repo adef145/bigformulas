@@ -134,3 +134,19 @@ data = 100;
 console.log(Formulas.convWeight(data, 'mg', 'g'));
 data = 1;
 console.log(Formulas.convWeight(data, 'kg', 'cg'));
+
+// isEven
+data = 1;
+console.log(Formulas.isEven(data));
+
+// isOdd
+data = 1;
+console.log(Formulas.isOdd(data));
+
+// isEmail
+data = 1;
+console.log(Formulas.isEmail(data));
+data = 'ade.fruandta@gmail';
+console.log(Formulas.isEmail(data));
+data = 'ade.fruandta@gmail.com';
+console.log(Formulas.isEmail(data));

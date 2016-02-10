@@ -1,6 +1,6 @@
 {
   "name": "bigformulas",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Set of function collection",
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
@@ -13,7 +13,7 @@
     "collection",
     "lookup",
     "converter",
-    "temperatur",
+    "temperature",
     "weight",
     "time",
     "distance",
@@ -29,10 +29,13 @@
     "modus",
     "median",
     "mean",
-    "average"
+    "average",
+    "logical",
+    "isOdd",
+    "isEven",
+    "isEmail"
   ],
   "author": "Ade Fruandta",
-  "license": "ISC",
   "devDependencies": {
     "json-stable-stringify": "^1.0.0"
   },
