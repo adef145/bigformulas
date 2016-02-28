@@ -15,6 +15,7 @@ var collection = {
   // datetime
   dateAdd: require('./lib/datetime/dateAdd'),
   dateDiff: require('./lib/datetime/dateDiff'),
+  dateFormat: require('./lib/datetime/dateFormat'),
   // converter
   convTemperature: require('./lib/converter/convTemperature'),
   convTime: require('./lib/converter/convTime'),

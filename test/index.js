@@ -107,6 +107,14 @@ console.log(date2);
 console.log(Formulas.dateDiff(date1, date2));
 console.log(Formulas.dateDiff(date2, date1));
 
+// dateFormat
+var date = new Date();
+date = Formulas.dateAdd(date, 'day', 2);
+console.log(date);
+console.log(Formulas.dateFormat(date, 'DD:MM:YY hh:mm:ss'));
+console.log(Formulas.dateFormat(date, 'DD MMM YYYY hh:mm:ss'));
+console.log(Formulas.dateFormat(date, 'DD MMMM YYYY hh:mm:ss'));
+
 // maxDiff
 data = [6, 1, 2, 5];
 console.log(Formulas.maxDiff(data));

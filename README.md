@@ -195,6 +195,19 @@ console.log(Formulas.dateDiff(date1, date2));
 console.log(Formulas.dateDiff(date2, date1));
 ```
 
+###### dateFormat(dateTime, format)
+* dateTime: date value to formated
+* format: string format (DD is date, MM is month value, MMM is name of month only 3 letters, MMMM is full name month, YY is year only 2 numbers right, YYYY is full year, hh is hours, mm is minutes, ss is seconds)
+* return: string
+```bash
+var date = new Date();
+date = Formulas.dateAdd(date, 'day', 2);
+console.log(date);
+console.log(Formulas.dateFormat(date, 'DD:MM:YY hh:mm:ss'));
+console.log(Formulas.dateFormat(date, 'DD MMM YYYY hh:mm:ss'));
+console.log(Formulas.dateFormat(date, 'DD MMMM YYYY hh:mm:ss'));
+```
+
 ###### convTemperatur(value, from, to)
 * value: value to calculated
 * from: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
