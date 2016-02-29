@@ -162,4 +162,6 @@ console.log(Formulas.isEmail(data));
 // text
 var text = "abcd"
 console.log(Formulas.left(text, 2));
+console.log(Formulas.left(text, 5));
 console.log(Formulas.right(text, 2));
+console.log(Formulas.right(text, 5));
