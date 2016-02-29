@@ -24,7 +24,10 @@ var collection = {
   // logical
   isEven: require('./lib/logical/isEven'),
   isOdd: require('./lib/logical/isOdd'),
-  isEmail: require('./lib/logical/isEmail')
+  isEmail: require('./lib/logical/isEmail'),
+  // text
+  left: require('./lib/text/left'),
+  right: require('./lib/text/right')
 };
 
 module.exports = collection;

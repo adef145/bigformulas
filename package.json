@@ -34,7 +34,9 @@
     "logical",
     "isOdd",
     "isEven",
-    "isEmail"
+    "isEmail",
+    "left word",
+    "right word"
   ],
   "author": "Ade Fruandta",
   "devDependencies": {

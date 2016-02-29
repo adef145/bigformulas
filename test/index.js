@@ -158,3 +158,8 @@ data = 'ade.fruandta@gmail';
 console.log(Formulas.isEmail(data));
 data = 'ade.fruandta@gmail.com';
 console.log(Formulas.isEmail(data));
+
+// text
+var text = "abcd"
+console.log(Formulas.left(text, 2));
+console.log(Formulas.right(text, 2));
