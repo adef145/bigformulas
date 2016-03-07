@@ -63,21 +63,19 @@ console.log(Formulas.min(data, {key: 'num'}));
 
 // lookup
 var data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
-var data2 = [{id: 1, parentId: 1, favorite: true}, {id: 2, parentId: 3, favorite: false}];
+var data2 = [{id: 1, parentId: 3, favorite: true}, {id: 2, parentId: 2, favorite: false}];
 console.log(Formulas.lookup(data1, data2, {
-  key1: 'id',
-  key2: 'parentId'
-}));
-
-data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
-data2 = [{id: 1, parentId: 3, favorite: true}, {id: 2, parentId: 2, favorite: false}];
-console.log(Formulas.lookup(data1, data2, {
-  key1: 'id',
-  key2: 'parentId',
   alias: 'favorited',
   isEqual: function(item1, item2) {
-    return item1 === item2;
+    return item1.id === item2.parentId;
   }
+}));
+console.log(Formulas.lookup(data1, data2, {
+  alias: 'favorited',
+  isEqual: function(item1, item2) {
+    return item1.id === item2.parentId;
+  },
+  typeJoin: 'left'
 }));
 
 // dateAdd
@@ -106,6 +104,14 @@ date2 = Formulas.dateAdd(date2, 'year', 2);
 console.log(date2);
 console.log(Formulas.dateDiff(date1, date2));
 console.log(Formulas.dateDiff(date2, date1));
+
+// dateFormat
+var date = new Date();
+date = Formulas.dateAdd(date, 'day', 2);
+console.log(date);
+console.log(Formulas.dateFormat(date, 'DD:MM:YY hh:mm:ss'));
+console.log(Formulas.dateFormat(date, 'DD MMM YYYY hh:mm:ss'));
+console.log(Formulas.dateFormat(date, 'DD MMMM YYYY hh:mm:ss'));
 
 // maxDiff
 data = [6, 1, 2, 5];
@@ -150,3 +156,10 @@ data = 'ade.fruandta@gmail';
 console.log(Formulas.isEmail(data));
 data = 'ade.fruandta@gmail.com';
 console.log(Formulas.isEmail(data));
+
+// text
+var text = "abcd"
+console.log(Formulas.left(text, 2));
+console.log(Formulas.left(text, 5));
+console.log(Formulas.right(text, 2));
+console.log(Formulas.right(text, 5));

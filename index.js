@@ -15,6 +15,7 @@ var collection = {
   // datetime
   dateAdd: require('./lib/datetime/dateAdd'),
   dateDiff: require('./lib/datetime/dateDiff'),
+  dateFormat: require('./lib/datetime/dateFormat'),
   // converter
   convTemperature: require('./lib/converter/convTemperature'),
   convTime: require('./lib/converter/convTime'),
@@ -23,7 +24,10 @@ var collection = {
   // logical
   isEven: require('./lib/logical/isEven'),
   isOdd: require('./lib/logical/isOdd'),
-  isEmail: require('./lib/logical/isEmail')
+  isEmail: require('./lib/logical/isEmail'),
+  // text
+  left: require('./lib/text/left'),
+  right: require('./lib/text/right')
 };
 
 module.exports = collection;

@@ -1,6 +1,6 @@
 {
   "name": "bigformulas",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Set of function collection",
   "main": "index.js",
   "repository": "https://github.com/adef145/bigformulas.git",
@@ -20,6 +20,7 @@
     "datetime",
     "date add",
     "date different",
+    "date format",
     "matrix",
     "array",
     "transpose",
@@ -33,7 +34,9 @@
     "logical",
     "isOdd",
     "isEven",
-    "isEmail"
+    "isEmail",
+    "left word",
+    "right word"
   ],
   "author": "Ade Fruandta",
   "devDependencies": {
