@@ -148,17 +148,6 @@ console.log(Formulas.lookup(data1, data2, {
   },
   typeJoin: 'left'
 }));
-
-data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
-data2 = [{id: 1, parentId: 3, favorite: true}, {id: 2, parentId: 2, favorite: false}];
-console.log(Formulas.lookup(data1, data2, {
-  key1: 'id',
-  key2: 'parentId',
-  alias: 'favorited',
-  isEqual: function(item1, item2) {
-    return item1 === item2;
-  }
-}));
 ```
 
 ###### dateAdd(dateTime, type, value)
