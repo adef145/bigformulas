@@ -8,7 +8,7 @@ This code used [lodash](https://github.com/lodash/lodash "lodash").
 This code build in nodejs.
 
 Install Big Formulas
-```javascript
+```bash
 npm install bigformulas
 ```
 
