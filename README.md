@@ -279,3 +279,21 @@ console.log(Formulas.isOdd(data));
 data = 'ade.fruandta@gmail.com';
 console.log(Formulas.isEmail(data));
 ```
+
+###### right(text, number)
+* text: string to be substring
+* number: subtring string number word from right
+* return: string
+```javascript
+var text = "abcd"
+console.log(Formulas.right(text, 2));
+```
+
+###### left(text, number)
+* text: string to be substring
+* number: subtring string number word from left
+* return: string
+```javascript
+var text = "abcd"
+console.log(Formulas.left(text, 2));
+```
