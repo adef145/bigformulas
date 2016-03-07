@@ -282,7 +282,7 @@ console.log(Formulas.isEmail(data));
 
 ###### right(text, number)
 * text: string to be substring
-* number: subtring string number word from right
+* number: number word to be get from right
 * return: string
 ```javascript
 var text = "abcd"
@@ -291,7 +291,7 @@ console.log(Formulas.right(text, 2));
 
 ###### left(text, number)
 * text: string to be substring
-* number: subtring string number word from left
+* number: number word to be get from left
 * return: string
 ```javascript
 var text = "abcd"
