@@ -8,18 +8,18 @@ This code used [lodash](https://github.com/lodash/lodash "lodash").
 This code build in nodejs.
 
 Install Big Formulas
-```bash
+```javascript
 npm install bigformulas
 ```
 
 Require bigformulas
-```bash
+```javascript
 var Formulas = require('bigformulas');
 ```
 
 ## Example
 
-```bash
+```javascript
 var Formulas = require('bigformulas');
 
 // mean
@@ -34,7 +34,7 @@ console.log(Formulas.mean(data) + ' => ' + 2.5);
 * options:
   * key: if data an object give a string of key
 * return: number / object
-```bash
+```javascript
 data = [1, 2, 3];
 console.log(Formulas.max(data));
 
@@ -48,7 +48,7 @@ console.log(Formulas.max(data, {key: 'num'}));
   * key: if data an object give a string of key
   * type: string ('sequence' or 'random') default 'random'
 * return: object {max, min}
-```bash
+```javascript
 data = [6, 1, 2, 5];
 console.log(Formulas.maxDiff(data));
 data = [{num: 6}, {num: 1}, {num: 2}, {num: 5}];
@@ -60,7 +60,7 @@ console.log(Formulas.maxDiff(data, {key: 'num', type: 'sequence'}));
 * options:
   * key: if data an object give a string of key
 * return: number / object
-```bash
+```javascript
 data = [1, 2, 3];
 console.log(Formulas.min(data));
 
@@ -74,7 +74,7 @@ console.log(Formulas.min(data, {key: 'num'}));
   * key: if data an object give a string of key
   * isCounted: give a function to check data to calculated (default always true)
 * return: number / object
-```bash
+```javascript
 data = [1, 2, 3];
 console.log(Formulas.min(data));
 
@@ -92,7 +92,7 @@ console.log(Formulas.mean(data, {key: 'num', isCounted: function(item) {
 * options:
   * key: if data an object give a string of key
 * return: number / object
-```bash
+```javascript
 data = [3, 1, 2, 4];
 console.log(Formulas.median(data) + ' => ' + 2.5);
 
@@ -106,7 +106,7 @@ console.log(Formulas.median(data, {key: 'num'}) + ' => ' + 2.5);
   * key: if data an object give a string of key
   * isCounted: give a function to check data to calculated (default always true)
 * return: number / object
-```bash
+```javascript
 data = [1, 2, 2, 4];
 console.log(Formulas.modus(data));
 
@@ -122,7 +122,7 @@ console.log(Formulas.modus(data, {key: 'num', isCounted: function(item) {
 ###### traspose(data)
 * data: collection of data to transpose
 * return: array
-```bash
+```javascript
 data = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
 console.log(Formulas.transpose(data));
 
@@ -134,17 +134,19 @@ console.log(Formulas.transpose(data));
 * data1: collection of data source
 * data2: collection of data to lookup
 * options:
-  * key1: key of data1 to be lookup
-  * key2: key of data2 to be lookup
   * alias: alias of child to be stored in data1 if lookup (default 'child')
-  * isEqual: function to be validated that data is founded (default isEqual from lodash)
+  * isEqual: function to be validated that data (item in data1 & item in data2) is founded (default isEqual from lodash)
+  * typeJoin: type join like 'inner' / 'left' (default is inner)
 * return: object
-```bash
+```javascript
 var data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
-var data2 = [{id: 1, parentId: 1, favorite: true}, {id: 2, parentId: 3, favorite: false}];
+var data2 = [{id: 1, parentId: 3, favorite: true}, {id: 2, parentId: 2, favorite: false}];
 console.log(Formulas.lookup(data1, data2, {
-  key1: 'id',
-  key2: 'parentId'
+  alias: 'favorited',
+  isEqual: function(item1, item2) {
+    return item1.id === item2.parentId;
+  },
+  typeJoin: 'left'
 }));
 
 data1 = [{id: 1, name: 'Ade'}, {id: 2, name: 'Fruandta'}];
@@ -164,7 +166,7 @@ console.log(Formulas.lookup(data1, data2, {
 * type: string ('milisecond', 'second', 'minute', 'hour', 'day', 'month', 'year')
 * value: number
 * return: date
-```bash
+```javascript
 var dateTime = new Date();
 console.log(dateTime);
 console.log(Formulas.dateAdd(dateTime, 'second', 1));
@@ -179,7 +181,7 @@ console.log(Formulas.dateAdd(dateTime, 'year', 1));
 * dateTime1: date value to calculated
 * dateTime2: date value to calculated
 * return: object {milisecond, second, minute, hour, day, month, year}
-```bash
+```javascript
 var date1 = new Date();
 var date2 = new Date();
 console.log(date1);
@@ -199,7 +201,7 @@ console.log(Formulas.dateDiff(date2, date1));
 * dateTime: date value to formated
 * format: string format (DD is date, MM is month value, MMM is name of month only 3 letters, MMMM is full name month, YY is year only 2 numbers right, YYYY is full year, hh is hours, mm is minutes, ss is seconds)
 * return: string
-```bash
+```javascript
 var date = new Date();
 date = Formulas.dateAdd(date, 'day', 2);
 console.log(date);
@@ -213,7 +215,7 @@ console.log(Formulas.dateFormat(date, 'DD MMMM YYYY hh:mm:ss'));
 * from: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
 * to: string (celcius is 'C', fahrenheit is 'F', reamur is 'R', kelvin is 'K')
 * return: number
-```bash
+```javascript
 data = 75;
 console.log(Formulas.convTemperature(data, 'R', 'K'));
 ```
@@ -223,7 +225,7 @@ console.log(Formulas.convTemperature(data, 'R', 'K'));
 * from: string (milisecond is 'ms', second is 's', minute is 'm', hour is 'h', day is 'd')
 * to: string (milisecond is 'ms', second is 's', minute is 'm', hour is 'h', day is 'd')
 * return: number
-```bash
+```javascript
 data = 100;
 console.log(Formulas.convTime(data, 's', 'm'));
 data = 1;
@@ -235,7 +237,7 @@ console.log(Formulas.convTime(data, 'd', 'h'));
 * from: string (milimeter is 'mm', centimeter is 'cm', desimeter is 'dm', meter is 'm', dekameter is 'dam', hektometer is 'hm', kilometer is 'km')
 * to: string (milimeter is 'mm', centimeter is 'cm', desimeter is 'dm', meter is 'm', dekameter is 'dam', hektometer is 'hm', kilometer is 'km')
 * return: number
-```bash
+```javascript
 data = 100;
 console.log(Formulas.convDistance(data, 'mm', 'm'));
 data = 1;
@@ -247,7 +249,7 @@ console.log(Formulas.convDistance(data, 'km', 'cm'));
 * from: string (miligram is 'mg', centigram is 'cg', desigram is 'dg', gram is 'g', dekagram is 'dag', hektogram is 'hg', kilogram is 'kg')
 * to: string (miligram is 'mg', centigram is 'cg', desigram is 'dg', gram is 'g', dekagram is 'dag', hektogram is 'hg', kilogram is 'kg')
 * return: number
-```bash
+```javascript
 data = 100;
 console.log(Formulas.convWeight(data, 'mg', 'g'));
 data = 1;
@@ -257,7 +259,7 @@ console.log(Formulas.convWeight(data, 'kg', 'cg'));
 ###### isEven(value)
 * value: value to calculated
 * return: true / false
-```bash
+```javascript
 data = 1;
 console.log(Formulas.isEven(data));
 ```
@@ -265,7 +267,7 @@ console.log(Formulas.isEven(data));
 ###### isOdd(value)
 * value: value to calculated
 * return: true / false
-```bash
+```javascript
 data = 1;
 console.log(Formulas.isOdd(data));
 ```
@@ -273,7 +275,7 @@ console.log(Formulas.isOdd(data));
 ###### isEmail(email)
 * email: string email to validated
 * return: true / false
-```bash
+```javascript
 data = 'ade.fruandta@gmail.com';
 console.log(Formulas.isEmail(data));
 ```
