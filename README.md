@@ -1,5 +1,8 @@
 # Big Formulas
 
+<span class="badge-npmversion"><a href="https://npmjs.org/package/bigformulas" title="View this project on NPM"><img src="https://img.shields.io/npm/v/bigformulas.svg" alt="NPM version" /></a></span>
+<span class="badge-npmdownloads"><a href="https://npmjs.org/package/bigformulas" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/bigformulas.svg" alt="NPM downloads" /></a></span>
+
 This code for everyone who need Collection formulas (likes mean, median, modus, etc) or Matrix function (like transpose, etc).
 This code used [lodash](https://github.com/lodash/lodash "lodash").
 
